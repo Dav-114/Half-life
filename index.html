@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta Half-Life</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1 id="title">Encuesta sobre Half-Life</h1>
+    <p id="description">Nos Gustaria conocer tu opinion sobre Half-Life</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Nombre:</label>
+      <input id="name" type="text" placeholder="Ingresa tu nombre" required>
+
+      <label id="email-label" for="email">Correo electrónico:</label>
+      <input id="email" type="email" placeholder="Ingresa tu correo" required>
+
+      <label id="number-label" for="number">¿Cuál es tu edad?</label>
+      <input id="number" type="number" placeholder="Ingresa tu edad" min="10" max="100" required>
+
+      <label for="dropdown">¿Cuál es tu juego favorito de Half-Life?</label>
+   <select id="dropdown">
+     <option value="half-life 1">Half-Life 1</option>
+     <option value="half-life 2">Half-Life 2</option>
+     <option value="half-life alyx">Half-Life Alyx</option>
+     </select>
+      <p>¿Disfrutaste jugando Half-Life?</p>
+      <label><input type="radio" name="enjoy" value="si" required> Sí</label>
+      <label><input type="radio" name="enjoy" value="no" required> No</label>
+
+      <p>¿Qué aspectos te gustaron? (Selecciona todos los que correspondan)</p>
+      <label><input type="checkbox" name="aspect" value="historia"> Historia</label>
+      <label><input type="checkbox" name="aspect" value="graficos"> Gráficos</label>
+      <label><input type="checkbox" name="aspect" value="jugabilidad"> Jugabilidad</label>
+
+      <label for="comments">Comentarios adicionales:</label>
+      <textarea id="comments" placeholder="Escribe tus comentarios aquí..."></textarea>
+
+      <button id="submit" type="submit">Enviar</button>
+    </form>
+  </main>
+</body>
+</html>
